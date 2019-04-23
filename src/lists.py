@@ -16,16 +16,21 @@ print(x)
 for num in y:
     x.append(num)
 print(x)
+# x.extend(y)
+# x = x + y OR x += y
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
 x.pop(4)
 print(x)
+# x.remove(8)
+# del x[4]
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
 x.insert(5, 99)
 print(x)
+# x.insert(-1, 99)
 
 # Print the length of list x
 # YOUR CODE HERE
