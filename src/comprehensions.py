@@ -36,6 +36,9 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
+# includes every-other element
 y = [x[i] for i in range(len(x)) if i % 2]
+# includes even numbers only
+y = [x[i] for i in range(len(x)) if int(x[i]) % 2 == 0]
 
 print(y)
