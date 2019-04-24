@@ -46,6 +46,11 @@ waypoints.append({
 waypoints[0]["lon"] = -130
 waypoints[0]["name"] = "not a real place"
 waypoints
+# someone else's sol'n from class, more general:
+# found = next(wp for wp in waypoints if wp['name'] == 'a place')
+# if found is not None:
+#     found['lon'] = -130
+#     found['name'] = 'not a real place'
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 for waypoint in waypoints:

@@ -28,12 +28,18 @@ args = sys.argv
 now = datetime.now()
 try:
     if len(args) == 1:
+        # no input, print month calendar for today
         print(calendar.TextCalendar().formatmonth(now.year, now.month))
     elif len(args) == 2:
+        # one arg, set to month
         print(calendar.TextCalendar().formatmonth(now.year, int(args[1])))
     elif len(args) == 3:
+        # two args, set to year, month
         print(calendar.TextCalendar().formatmonth(int(args[2]), int(args[1])))
     else:
+        # too many args
         print("please provide month and year only.")
 except ValueError:
-    print("month then year as numbers, please!")
+    # non-numbers or some other problem with user input
+    print(
+        "month then year as numbers, please! usage: calendar.py [month] [year]")
